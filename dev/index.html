@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,30 @@
   <link rel="stylesheet" href="./css/modern-normalize.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
   <!-- <color-div></color-div> -->
 
   <main class="appl-main" id="main">
     <!-- <appl-color-typer></appl-color-typer> -->
-    <input type="text" id="color-typer">
+    <input type="text" id="color-typer" value="wheat">
+    <p>Type in a color code, name, or more.</p>
 
     <p>
-      <!-- Install this Progressive Web App.<br> -->
-      Type in a color code, name, or more.<br>
-      <!-- Double click anywhere to hide or show this overlay.<br> -->
+      <p><a href>Click here</a> to install this Progressive Web App.<br></p>
       <!-- Move or resize the color window as you see fit.<br> -->
-      <!-- Press F11 to toggle fullscreen. -->
+      <p><a href>Click here</a> to toggle fullscreen (or press <kbd>F11</kbd>).</p>
+      <p>Double click anywhere to hide or show this overlay.</p>
     </p>
 
+    <details>
+      <summary>Named colors you can use</summary>
+      <ul id="named-colors" class="appl-color-list">
+      </ul>
+    </details>
 
-    <ul class="appl-button-group">
+
+    <!-- <ul class="appl-button-group">
       <li class="appl-button-group__item">
         <button id="install-app">Install app</button>
         <p><small>It's a <a href>PWA</a></small></p>
@@ -36,13 +44,14 @@
         <button id="hide-overlay">Hide this overlay</button>
         <p><small>Double-click to show it again</small></p>
       </li>
-    </ul>
+    </ul> -->
 
-    
-  
+
+
   </main>
 
 
   <script type="module" src="./js/main.js"></script>
 </body>
+
 </html>

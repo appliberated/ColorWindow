@@ -1,12 +1,12 @@
-import './components/appl-color-typer.js';
+// import './components/appl-color-typer.js';
+import { namedColors } from "./named-colors";
 
 const mainElem = document.getElementById('main');
+const colorTyperInput = document.getElementById('color-typer');
 
-const colorTyperElem = document.querySelector('appl-color-typer');
-colorTyperElem?.addEventListener('colorchange', (e) => {
-  document.body.style.backgroundColor = e.detail.color;
-});
-
+function changeColor(color: string) {
+  document.body.style.backgroundColor = color;
+}
 
 function initHideOverlay() {
   const hideButton = document.getElementById('hide-overlay');
@@ -28,12 +28,28 @@ function initToggleFullScreen() {
 }
 
 function initColorTyper() {
-  const colorTyperInput = document.getElementById('color-typer');
   colorTyperInput?.addEventListener('input', (e) => {
-    document.body.style.backgroundColor = e.target.value;
+    changeColor(e.target.value);
   });
 }
 
+function addNamedColors() {
+  var fragment = new DocumentFragment();
+
+  namedColors.forEach(color => {
+    const li = document.createElement('li');
+    li.innerHTML = `<samp style="background-color: ${color};"></samp> ${color}`;
+    li.addEventListener("click", () => {
+      colorTyperInput?.value = color;
+      changeColor(color);
+    });
+    fragment.appendChild(li);
+  })
+
+  document.getElementById("named-colors")?.appendChild(fragment);
+}
+
+addNamedColors();
 initColorTyper();
 initToggleFullScreen();
 initHideOverlay();

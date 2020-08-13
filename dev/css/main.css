@@ -1,9 +1,9 @@
 body {
-  background-color: aqua;
+  background-color: wheat;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 p {
@@ -16,11 +16,15 @@ a {
 }
 
 
-input {
+input[type="text"] {
   background-color: transparent;
-  border-radius: 0.4rem;
-  border: 0.1rem solid;
+  /* border-radius: 0.4rem; */
+  border-radius: 2px;
+  border: 1px solid;
   margin-bottom: 1rem;
+  padding: .5rem;
+  width: 100%;
+  line-height: 1.5;
 }
 
 button {
@@ -53,9 +57,17 @@ button:active {
 
 
 .appl-main {
-  text-align: center;
+  /* text-align: center; */
   /* margin: auto;
   max-width: 720px; */
+  /* background-color: rgba(255, 255, 255, 0.25); */
+  /* padding: 3rem 0; */
+  border-radius: 2px;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-color: white;
+  /* padding: 2rem 3rem; */
+  padding: 2rem 2.5rem;
+  margin: 2rem 0;
 }
 
 
@@ -68,4 +80,38 @@ button:active {
 
 .appl-button-group__item {
   margin: 0 2rem;
+}
+
+
+li[data-color] {
+  background-color: attr(data-color);
+}
+
+
+.appl-color-list {
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  list-style: none;
+  padding-left: 0;
+  /* columns: auto 12rem; */
+  columns: 2 auto;
+  margin-bottom: 0;
+}
+
+.appl-color-list li {
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.appl-color-list li:last-child {
+  margin-bottom: 0;
+}
+
+.appl-color-list samp {
+  border-radius: 2px;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+  margin-right: .5rem;
 }
