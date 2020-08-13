@@ -16,7 +16,8 @@ function initHideOverlay() {
 
   document.body.addEventListener("contextmenu", (e) => {
     e.preventDefault();
-    mainElem?.hidden = false;
+    // mainElem?.hidden = false;
+    mainElem?.hidden = !mainElem?.hidden;
   });
 }
 
@@ -24,8 +25,8 @@ function initHideOverlay() {
 function initToggleFullScreen() {
   const fullScreenButton = document.getElementById('toggle-fullscreen');
   fullScreenButton?.addEventListener("click", (e) => {
+    e.preventDefault();
     if (!document.fullscreenElement) {
-      e.preventDefault();
       document.documentElement.requestFullscreen();
     } else {
       document.exitFullscreen();

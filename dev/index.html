@@ -11,35 +11,19 @@
 
 <body>
   <main class="appl-main" id="main">
-    <p>Type in a color name, code, and more:</p>
     <p>
       <input type="text" id="color-typer" value="wheat" autofocus spellcheck="false"
-        placeholder="fuchsia, #FF0099, rgb(255,0,153), hsl(120,100%,60%)">
+        placeholder="fuchsia, #7822FF, rgb(255,0,153), hsl(120,100%,60%)">
     </p>
-    <!-- <p class="appl-mb-2">Type in a color name, code, and more.</p> -->
 
-    <!-- <div class="appl-mb-2"> -->
-    <div>
-      <!-- <p><a href>Click here</a> to install this Progressive Web App.<br></p> -->
-      <!-- Move or resize the color window as you see fit.<br> -->
-      <p><a href id="toggle-fullscreen">Click here</a> to toggle fullscreen (or press <kbd>F11</kbd>).</p>
-      <!-- <p>Double click anywhere to hide or show this overlay.</p> -->
-      <p><a href id="hide-overlay">Click here</a> to hide this panel. Right-click to show it again.</p>
-    </div>
+    <p>Type in a color name, code, and more.</p>
+    <p><a href id="toggle-fullscreen">Click here</a> to toggle fullscreen (or press <kbd>F11</kbd>).</p>
+    <p><a href id="hide-overlay">Click here</a> to hide this panel. Right-click to show it again.</p>
 
     <details>
       <summary>Named colors you can use</summary>
-      <ul id="named-colors" class="appl-color-list">
-      </ul>
+      <ul id="named-colors" class="appl-color-list"></ul>
     </details>
-
-    <!-- <ul class="appl-button-group">
-      <li class="appl-button-group__item">
-        <button id="install-app">Install app</button>
-        <p><small>It's a <a href>PWA</a></small></p>
-      </li>
-    </ul> -->
-
   </main>
 
   <script type="module" src="./js/main.js"></script>
