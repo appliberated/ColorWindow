@@ -16,22 +16,22 @@
       <button id="close-settings" class="appl-button--close">×</button>
     </div>
     <div class="appl-main__body">
-
-
-
-      <p>
-        <input type="text" id="color-typer" value="wheat" autofocus spellcheck="false"
+      <p>Type in a color name or code:</p>
+      <p class="appl-mb-2">
+        <input type="text" id="color-typer" value="salmon" autofocus spellcheck="false"
           placeholder="fuchsia, #7822FF, rgb(255,0,153), hsl(120,100%,60%)">
       </p>
 
-      <p>Type in a color name, code, and more.</p>
-      <p><a href id="toggle-fullscreen">Click here</a> to toggle fullscreen (or press <kbd>F11</kbd>).</p>
+      <!-- <p><a href id="toggle-fullscreen">Click here</a> to toggle fullscreen (or press <kbd>F11</kbd>).</p> -->
       <!-- <p><a href id="hide-overlay">Click here</a> to hide this panel. Right-click to show it again.</p> -->
+      <h2 class="appl-main__subtitle">Named colors you can use</h2>
+      <ul id="named-colors" class="appl-color-list appl-mb-2"></ul>
+      <p class="appl-mb-0">Toggle fullscreen (<kbd>F11</kbd>)</p>
 
-      <details>
+      <!-- <details>
         <summary>Named colors you can use</summary>
         <ul id="named-colors" class="appl-color-list"></ul>
-      </details>
+      </details> -->
     </div>
   </main>
 

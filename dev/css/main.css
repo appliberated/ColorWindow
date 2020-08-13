@@ -1,6 +1,6 @@
 body {
   color: #4a4a4a;
-  background-color: wheat;
+  background-color: salmon;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,10 @@ input[type="text"] {
   /* background-color: white; */
   /* padding: 2rem 3rem; */
   /* padding: 2rem 2.5rem; */
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
+  /* margin: 10rem 0; */
+  /* margin: 5rem 0 2rem 0; */
+  margin: 5rem 0 2.5rem 0;
 }
 
 
@@ -76,13 +79,20 @@ input[type="text"] {
 
 .appl-main__body {
   background-color: #f5f5f5;
-  padding: 1.25rem 1.5rem;
+  /* padding: 1.25rem 1.5rem; */
+  padding: 2rem 1.5rem;
   border-radius: 0 0 4px 4px;
 }
 
 .appl-main__title {
   font-size: 1rem;
   margin: 0;
+}
+
+.appl-main__subtitle {
+  /* font-size: 1.25rem; */
+  font-size: 1.15rem;
+  margin-bottom: 1.25rem;
 }
 
 
@@ -110,7 +120,7 @@ li[data-color] {
   padding-left: 0;
   /* columns: auto 12rem; */
   columns: 2 auto;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 .appl-color-list li {
@@ -130,6 +140,10 @@ li[data-color] {
   width: 3rem;
   height: 1.5rem;
   margin-right: .5rem;
+}
+
+.appl-mb-0 {
+  margin-bottom: 0;
 }
 
 .appl-mb-2 {
