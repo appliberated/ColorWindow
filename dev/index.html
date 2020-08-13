@@ -10,18 +10,35 @@
 <body>
   <!-- <color-div></color-div> -->
 
-  <main class="appl-main">
-    <appl-color-typer></appl-color-typer>
+  <main class="appl-main" id="main">
+    <!-- <appl-color-typer></appl-color-typer> -->
+    <input type="text" id="color-typer">
 
     <p>
-      Install this Progressive Web App.<br>
-      Type in a color.<br>
-      Double click anywhere to hide or show this overlay.<br>
-      Move or resize the color window as you see fit.<br>
-      Press F11 to toggle fullscreen.
+      <!-- Install this Progressive Web App.<br> -->
+      Type in a color code, name, or more.<br>
+      <!-- Double click anywhere to hide or show this overlay.<br> -->
+      <!-- Move or resize the color window as you see fit.<br> -->
+      <!-- Press F11 to toggle fullscreen. -->
     </p>
 
-    <input type="text">
+
+    <ul class="appl-button-group">
+      <li class="appl-button-group__item">
+        <button id="install-app">Install app</button>
+        <p><small>It's a <a href>PWA</a></small></p>
+      </li>
+      <li class="appl-button-group__item">
+        <button id="toggle-fullscreen">Toggle fullscreen</button>
+        <p><small>Or press <kbd>F11</kbd></small></p>
+      </li>
+      <li class="appl-button-group__item">
+        <button id="hide-overlay">Hide this overlay</button>
+        <p><small>Double-click to show it again</small></p>
+      </li>
+    </ul>
+
+    
   
   </main>
 
