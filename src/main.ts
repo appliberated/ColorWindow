@@ -1,4 +1,3 @@
-// import './components/appl-color-typer.js';
 import { namedColors } from "./named-colors";
 
 const mainElem = document.getElementById('main');
@@ -10,16 +9,23 @@ function changeColor(color: string) {
 
 function initHideOverlay() {
   const hideButton = document.getElementById('hide-overlay');
-  hideButton?.addEventListener('click', () => {
+  hideButton?.addEventListener('click', (e) => {
+    e.preventDefault();
     mainElem?.hidden = true;
+  });
+
+  document.body.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    mainElem?.hidden = false;
   });
 }
 
 
 function initToggleFullScreen() {
   const fullScreenButton = document.getElementById('toggle-fullscreen');
-  fullScreenButton?.addEventListener("click", () => {
+  fullScreenButton?.addEventListener("click", (e) => {
     if (!document.fullscreenElement) {
+      e.preventDefault();
       document.documentElement.requestFullscreen();
     } else {
       document.exitFullscreen();

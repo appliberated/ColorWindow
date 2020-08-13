@@ -4,25 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Color Div Invasion</title>
+  <title>Color Window</title>
   <link rel="stylesheet" href="./css/modern-normalize.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-  <!-- <color-div></color-div> -->
-
   <main class="appl-main" id="main">
-    <!-- <appl-color-typer></appl-color-typer> -->
-    <input type="text" id="color-typer" value="wheat">
-    <p>Type in a color code, name, or more.</p>
-
+    <p>Type in a color name, code, and more:</p>
     <p>
-      <p><a href>Click here</a> to install this Progressive Web App.<br></p>
-      <!-- Move or resize the color window as you see fit.<br> -->
-      <p><a href>Click here</a> to toggle fullscreen (or press <kbd>F11</kbd>).</p>
-      <p>Double click anywhere to hide or show this overlay.</p>
+      <input type="text" id="color-typer" value="wheat" autofocus spellcheck="false"
+        placeholder="fuchsia, #FF0099, rgb(255,0,153), hsl(120,100%,60%)">
     </p>
+    <!-- <p class="appl-mb-2">Type in a color name, code, and more.</p> -->
+
+    <!-- <div class="appl-mb-2"> -->
+    <div>
+      <!-- <p><a href>Click here</a> to install this Progressive Web App.<br></p> -->
+      <!-- Move or resize the color window as you see fit.<br> -->
+      <p><a href id="toggle-fullscreen">Click here</a> to toggle fullscreen (or press <kbd>F11</kbd>).</p>
+      <!-- <p>Double click anywhere to hide or show this overlay.</p> -->
+      <p><a href id="hide-overlay">Click here</a> to hide this panel. Right-click to show it again.</p>
+    </div>
 
     <details>
       <summary>Named colors you can use</summary>
@@ -30,26 +33,14 @@
       </ul>
     </details>
 
-
     <!-- <ul class="appl-button-group">
       <li class="appl-button-group__item">
         <button id="install-app">Install app</button>
         <p><small>It's a <a href>PWA</a></small></p>
       </li>
-      <li class="appl-button-group__item">
-        <button id="toggle-fullscreen">Toggle fullscreen</button>
-        <p><small>Or press <kbd>F11</kbd></small></p>
-      </li>
-      <li class="appl-button-group__item">
-        <button id="hide-overlay">Hide this overlay</button>
-        <p><small>Double-click to show it again</small></p>
-      </li>
     </ul> -->
 
-
-
   </main>
-
 
   <script type="module" src="./js/main.js"></script>
 </body>
