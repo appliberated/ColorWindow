@@ -1,0 +1,20 @@
+{
+  "name": "color-div-invasion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "es-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "es-dev-server": "^1.57.2"
+  },
+  "dependencies": {
+    "lit-element": "^2.3.1"
+  }
+}

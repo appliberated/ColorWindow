@@ -1,0 +1,17 @@
+html {
+  font-family: Verdana;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.appl-main {
+  margin: auto;
+  max-width: 600px;
+}
+
+input {
+  color: blue;
+}
