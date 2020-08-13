@@ -11,19 +11,28 @@
 
 <body>
   <main class="appl-main" id="main">
-    <p>
-      <input type="text" id="color-typer" value="wheat" autofocus spellcheck="false"
-        placeholder="fuchsia, #7822FF, rgb(255,0,153), hsl(120,100%,60%)">
-    </p>
+    <div class="appl-main__header">
+      <h1 class="appl-main__title">Color Window Settings</h1>
+      <button id="close-settings" class="appl-button--close">×</button>
+    </div>
+    <div class="appl-main__body">
 
-    <p>Type in a color name, code, and more.</p>
-    <p><a href id="toggle-fullscreen">Click here</a> to toggle fullscreen (or press <kbd>F11</kbd>).</p>
-    <p><a href id="hide-overlay">Click here</a> to hide this panel. Right-click to show it again.</p>
 
-    <details>
-      <summary>Named colors you can use</summary>
-      <ul id="named-colors" class="appl-color-list"></ul>
-    </details>
+
+      <p>
+        <input type="text" id="color-typer" value="wheat" autofocus spellcheck="false"
+          placeholder="fuchsia, #7822FF, rgb(255,0,153), hsl(120,100%,60%)">
+      </p>
+
+      <p>Type in a color name, code, and more.</p>
+      <p><a href id="toggle-fullscreen">Click here</a> to toggle fullscreen (or press <kbd>F11</kbd>).</p>
+      <!-- <p><a href id="hide-overlay">Click here</a> to hide this panel. Right-click to show it again.</p> -->
+
+      <details>
+        <summary>Named colors you can use</summary>
+        <ul id="named-colors" class="appl-color-list"></ul>
+      </details>
+    </div>
   </main>
 
   <script type="module" src="./js/main.js"></script>

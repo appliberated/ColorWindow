@@ -7,10 +7,9 @@ function changeColor(color: string) {
   document.body.style.backgroundColor = color;
 }
 
-function initHideOverlay() {
-  const hideButton = document.getElementById('hide-overlay');
-  hideButton?.addEventListener('click', (e) => {
-    e.preventDefault();
+function initCloseSettings() {
+  const closeButton = document.getElementById('close-settings');
+  closeButton?.addEventListener('click', () => {
     mainElem?.hidden = true;
   });
 
@@ -59,4 +58,4 @@ function addNamedColors() {
 addNamedColors();
 initColorTyper();
 initToggleFullScreen();
-initHideOverlay();
+initCloseSettings();

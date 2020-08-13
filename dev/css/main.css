@@ -27,32 +27,6 @@ input[type="text"] {
   line-height: 1.5;
 }
 
-button {
-  background-color: transparent;
-  border-radius: 0.4rem;
-  border: 0.1rem solid;
-  cursor: pointer;
-  /* font-weight: 700; */
-  font-weight: 500;
-  letter-spacing: .1rem;
-  margin-bottom: .5rem;
-  padding-bottom: calc(1rem - 1px);
-  padding-top: calc(1rem - 1px);
-  padding-left: 2rem;
-  padding-right: 2rem;
-  text-transform: uppercase;
-  user-select: none;
-  white-space: nowrap;
-}
-
-button:focus, button:hover {
-  outline: 0;
-  opacity: 0.7;
-}
-
-button:active {
-  opacity: 0.5;
-}
 
 
 
@@ -62,13 +36,55 @@ button:active {
   max-width: 720px; */
   /* background-color: rgba(255, 255, 255, 0.25); */
   /* padding: 3rem 0; */
-  border-radius: 2px;
+  /* border-radius: 2px; */
   /* background-color: rgba(255, 255, 255, 0.5); */
-  background-color: white;
+  /* background-color: white; */
   /* padding: 2rem 3rem; */
-  padding: 2rem 2.5rem;
+  /* padding: 2rem 2.5rem; */
   margin: 2rem 0;
 }
+
+
+.appl-main__header {
+  background-color: #4a4a4a;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+  padding: .75rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.appl-button--close {
+  background-color: rgba(10, 10, 10, .2);
+  border-radius: 50%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  outline: 0;
+  padding: 0 0.275rem 0.15rem 0.275rem;
+}
+
+.appl-button--close:focus, .appl-button--close:hover {
+  background-color: rgba(10, 10, 10, .3);
+}
+
+.appl-button--close:active {
+  background-color: rgba(10, 10, 10, .4);
+}
+
+.appl-main__body {
+  background-color: #f5f5f5;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 0 4px 4px;
+}
+
+.appl-main__title {
+  font-size: 1rem;
+  margin: 0;
+}
+
 
 
 .appl-button-group {
