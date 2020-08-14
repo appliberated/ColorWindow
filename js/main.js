@@ -1,4 +1,4 @@
-import { namedColors } from "./named-colors";
+import { namedColors } from "./named-colors.js";
 const mainEl = document.getElementById("main");
 const colorTyperInput = document.getElementById("color-typer");
 function changeColor(color) {
