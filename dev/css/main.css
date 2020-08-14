@@ -1,21 +1,24 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
 body {
-  color: #4a4a4a;
-  background-color: salmon;
-  display: flex;
   align-items: center;
+  background-color: salmon;
+  color: #4a4a4a;
+  display: flex;
   justify-content: center;
   min-height: 100vh;
 }
 
 p {
-  margin-top: 0;
   margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 a {
   color: inherit;
 }
-
 
 input[type="text"] {
   background-color: transparent;
@@ -23,9 +26,9 @@ input[type="text"] {
   border: 1px solid #dbdbdb;
   color: #363636;
   line-height: 1.5;
+  outline: 0;
   padding: .5rem .75rem;
   width: 100%;
-  outline: 0;
 }
 
 input[type="text"]:hover {
@@ -169,7 +172,16 @@ li[data-color] {
   justify-content: space-between; */
 }
 
-.appl-button {
+
+/* ==========================================================================
+   Elements
+   ========================================================================== */
+
+/*
+ * Buttons
+ */
+
+ .appl-button {
   align-items: center;
   background-color: #efefef;
   border-radius: 4px;
