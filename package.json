@@ -6,13 +6,15 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "serve": "es-dev-server"
+    "serve": "es-dev-server",
+    "clean": "rimraf dev/js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "es-dev-server": "^1.57.2",
+    "rimraf": "^3.0.2",
     "typescript": "^3.9.7"
   },
   "dependencies": {}

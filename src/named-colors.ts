@@ -1,3 +1,15 @@
+// export const namedColors = [
+//     "red", 
+//     "green", 
+//     "yellow", 
+//     "blue", 
+//     "brown", 
+//     "orange", 
+//     "pink", 
+//     // "purple", 
+//     "lightgoldenrodyellow",
+// ];
+
 export const namedColors = [
     "aliceblue",
     "antiquewhite",

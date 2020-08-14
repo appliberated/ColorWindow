@@ -149,3 +149,28 @@ li[data-color] {
 .appl-mb-2 {
   margin-bottom: 2rem;
 }
+
+
+.appl-buttons {
+  columns: 2;
+  /* align-items: center;
+  display: flex;
+  justify-content: space-between; */
+}
+
+.appl-button {
+  background-color: #efefef;
+  border-radius: 4px;
+  border: 1px solid #dbdbdb;
+  cursor: pointer;
+  height: 2rem;
+  outline: 0;
+}
+
+.appl-button:focus, .appl-button:hover {
+  border-color: #b5b5b5;
+}
+
+.appl-button:active {
+  border-color: #4a4a4a;
+}

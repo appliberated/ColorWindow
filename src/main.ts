@@ -1,15 +1,15 @@
 import { namedColors } from "./named-colors";
 
-const mainElem = document.getElementById('main');
-const colorTyperInput = document.getElementById('color-typer');
+const mainElem = document.getElementById("main");
+const colorTyperInput = document.getElementById("color-typer");
 
 function changeColor(color: string) {
   document.body.style.backgroundColor = color;
 }
 
 function initCloseSettings() {
-  const closeButton = document.getElementById('close-settings');
-  closeButton?.addEventListener('click', () => {
+  const closeButton = document.getElementById("close-settings");
+  closeButton?.addEventListener("click", () => {
     mainElem?.hidden = true;
   });
 
@@ -22,19 +22,21 @@ function initCloseSettings() {
 
 
 function initToggleFullScreen() {
-  const fullScreenButton = document.getElementById('toggle-fullscreen');
-  fullScreenButton?.addEventListener("click", (e) => {
-    e.preventDefault();
+  const fullScreenButton = document.getElementById("toggle-fullscreen");
+  fullScreenButton?.addEventListener("click", async () => {
+    // e.preventDefault();
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen();
     } else {
-      document.exitFullscreen();
+      await document.exitFullscreen();
+      fullScreenButton.scrollIntoView();
+      console.log("scroll");
     }
   });
 }
 
 function initColorTyper() {
-  colorTyperInput?.addEventListener('input', (e) => {
+  colorTyperInput?.addEventListener("input", (e) => {
     changeColor(e.target.value);
   });
 }
@@ -43,7 +45,7 @@ function addNamedColors() {
   var fragment = new DocumentFragment();
 
   namedColors.forEach(color => {
-    const li = document.createElement('li');
+    const li = document.createElement("li");
     li.innerHTML = `<samp style="background-color: ${color};"></samp> ${color}`;
     li.addEventListener("click", () => {
       colorTyperInput?.value = color;
