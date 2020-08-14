@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Window</title>
+  <link rel="stylesheet" href="./css/modern-normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <main class="appl-main" id="main">
+    <div class="appl-main__header">
+      <h1 class="appl-main__title">Color Window Settings</h1>
+      <button id="close-settings" class="appl-button--close">×</button>
+    </div>
+    <div class="appl-main__body">
+      <p>Type in a color name or code:</p>
+      <p class="appl-mb-2">
+        <input type="text" id="color-typer" value="salmon" autofocus spellcheck="false"
+          placeholder="fuchsia, #7822FF, rgb(255,0,153), hsl(120,100%,60%)">
+      </p>
+
+      <!-- <p><a href id="hide-overlay">Click here</a> to hide this panel. Right-click to show it again.</p> -->
+      <h2 class="appl-main__subtitle">Named colors you can use</h2>
+      <ul id="named-colors" class="appl-color-list appl-mb-2"></ul>
+
+      <div class="appl-buttons">
+        <p class="appl-mb-0">
+          <button id="toggle-fullscreen" class="appl-button">Toggle fullscreen (<kbd>F11</kbd>)</button>
+        </p>
+        <p class="appl-mb-0">
+          <a href="https://appliberated.com/colorwindow/" target="_blank" class="appl-button">About Color Window</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

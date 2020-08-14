@@ -1,0 +1,208 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+body {
+  align-items: center;
+  background-color: salmon;
+  color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #dbdbdb;
+  color: #363636;
+  line-height: 1.5;
+  outline: 0;
+  padding: .5rem .75rem;
+  width: 100%;
+}
+
+input[type="text"]:hover {
+  border-color: #b5b5b5;
+}
+
+input[type="text"]:focus {
+  border-color: #4a4a4a;
+  border-width: 1.5px;
+}
+
+
+
+
+
+.appl-main {
+  /* text-align: center; */
+  /* margin: auto;
+  max-width: 720px; */
+  /* background-color: rgba(255, 255, 255, 0.25); */
+  /* padding: 3rem 0; */
+  /* border-radius: 2px; */
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  /* background-color: white; */
+  /* padding: 2rem 3rem; */
+  /* padding: 2rem 2.5rem; */
+  /* margin: 2rem 0; */
+  /* margin: 10rem 0; */
+  /* margin: 5rem 0 2rem 0; */
+  margin: 5rem 0 2.5rem 0;
+}
+
+
+.appl-main__header {
+  background-color: #4a4a4a;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+  padding: .75rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.appl-button--close {
+  background-color: rgba(10, 10, 10, .2);
+  border-radius: 50%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  outline: 0;
+  padding: 0 0.275rem 0.15rem 0.275rem;
+}
+
+.appl-button--close:focus, .appl-button--close:hover {
+  background-color: rgba(10, 10, 10, .3);
+}
+
+.appl-button--close:active {
+  background-color: rgba(10, 10, 10, .4);
+}
+
+.appl-main__body {
+  background-color: #f5f5f5;
+  /* padding: 1.25rem 1.5rem; */
+  padding: 2rem 1.5rem;
+  border-radius: 0 0 4px 4px;
+}
+
+.appl-main__title {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.appl-main__subtitle {
+  /* font-size: 1.25rem; */
+  font-size: 1.15rem;
+  margin-bottom: 1.25rem;
+}
+
+
+
+.appl-button-group {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+
+.appl-button-group__item {
+  margin: 0 2rem;
+}
+
+
+li[data-color] {
+  background-color: attr(data-color);
+}
+
+
+.appl-color-list {
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  list-style: none;
+  padding-left: 0;
+  /* columns: auto 12rem; */
+  columns: 2 auto;
+  /* margin-bottom: 0; */
+}
+
+.appl-color-list li {
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.appl-color-list li:last-child {
+  margin-bottom: 0;
+}
+
+.appl-color-list samp {
+  border-radius: 2px;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+  margin-right: .5rem;
+}
+
+.appl-mb-0 {
+  margin-bottom: 0;
+}
+
+.appl-mb-2 {
+  margin-bottom: 2rem;
+}
+
+
+.appl-buttons {
+  columns: 2;
+  /* align-items: center;
+  display: flex;
+  justify-content: space-between; */
+}
+
+
+/* ==========================================================================
+   Elements
+   ========================================================================== */
+
+/*
+ * Buttons
+ */
+
+ .appl-button {
+  align-items: center;
+  background-color: #efefef;
+  border-radius: 4px;
+  border: 1px solid #dbdbdb;
+  color: #363636;
+  cursor: pointer;
+  display: inline-flex;
+  height: 2rem;
+  outline: 0;
+  padding: 0 .5rem;
+  text-decoration: none;
+}
+
+.appl-button:focus, .appl-button:hover {
+  border-color: #b5b5b5;
+}
+
+.appl-button:active {
+  border-color: #4a4a4a;
+}
+
+.appl-button kbd {
+  margin-top: .15rem;
+}
