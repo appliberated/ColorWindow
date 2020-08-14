@@ -19,13 +19,24 @@ a {
 
 input[type="text"] {
   background-color: transparent;
-  /* border-radius: 0.4rem; */
-  border-radius: 2px;
-  border: 1px solid;
-  padding: .5rem;
-  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #dbdbdb;
+  color: #363636;
   line-height: 1.5;
+  padding: .5rem .75rem;
+  width: 100%;
+  outline: 0;
 }
+
+input[type="text"]:hover {
+  border-color: #b5b5b5;
+}
+
+input[type="text"]:focus {
+  border-color: #4a4a4a;
+  border-width: 1.5px;
+}
+
 
 
 
@@ -159,12 +170,17 @@ li[data-color] {
 }
 
 .appl-button {
+  align-items: center;
   background-color: #efefef;
   border-radius: 4px;
   border: 1px solid #dbdbdb;
+  color: #363636;
   cursor: pointer;
+  display: inline-flex;
   height: 2rem;
   outline: 0;
+  padding: 0 .5rem;
+  text-decoration: none;
 }
 
 .appl-button:focus, .appl-button:hover {
@@ -173,4 +189,8 @@ li[data-color] {
 
 .appl-button:active {
   border-color: #4a4a4a;
+}
+
+.appl-button kbd {
+  margin-top: .15rem;
 }
